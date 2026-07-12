@@ -1,0 +1,13 @@
+# golangci-lint config (v2 schema). Formatting is gofmt's job (see Makefile), so
+# this file only finds bugs and smells.
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  default: standard
+  enable:
+    - misspell
+    - unconvert
+    - errorlint
