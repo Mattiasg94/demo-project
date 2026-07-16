@@ -6,7 +6,7 @@ import "testing"
 // to greeting.go breaks this until the expected count is bumped to match — the
 // small, self-contained code-and-test pair the agent keeps in step.
 func TestGreetingsCount(t *testing.T) {
-	const want = 3
+	const want = 4
 	if got := len(Greetings()); got != want {
 		t.Fatalf("len(Greetings()) = %d; want %d", got, want)
 	}
